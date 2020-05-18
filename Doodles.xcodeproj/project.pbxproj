@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		9A992F672472759D0066A8E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F662472759D0066A8E6 /* AppDelegate.swift */; };
 		9A992F692472759D0066A8E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F682472759D0066A8E6 /* SceneDelegate.swift */; };
-		9A992F6B2472759D0066A8E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F6A2472759D0066A8E6 /* ContentView.swift */; };
+		9A992F6B2472759D0066A8E6 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F6A2472759D0066A8E6 /* IndexView.swift */; };
 		9A992F6D2472759F0066A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A992F6C2472759F0066A8E6 /* Assets.xcassets */; };
 		9A992F702472759F0066A8E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A992F6F2472759F0066A8E6 /* Preview Assets.xcassets */; };
 		9A992F732472759F0066A8E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A992F712472759F0066A8E6 /* LaunchScreen.storyboard */; };
 		9A992F7E247275A00066A8E6 /* DoodlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F7D247275A00066A8E6 /* DoodlesTests.swift */; };
 		9A992F89247275A00066A8E6 /* DoodlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F88247275A00066A8E6 /* DoodlesUITests.swift */; };
+		9A992F97247275B50066A8E6 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F96247275B50066A8E6 /* Clock.swift */; };
+		9A992F99247276500066A8E6 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F98247276500066A8E6 /* LazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		9A992F632472759D0066A8E6 /* Doodles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doodles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A992F662472759D0066A8E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A992F682472759D0066A8E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A992F6A2472759D0066A8E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A992F6A2472759D0066A8E6 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		9A992F6C2472759F0066A8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A992F6F2472759F0066A8E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A992F722472759F0066A8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		9A992F84247275A00066A8E6 /* DoodlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoodlesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A992F88247275A00066A8E6 /* DoodlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodlesUITests.swift; sourceTree = "<group>"; };
 		9A992F8A247275A00066A8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A992F96247275B50066A8E6 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		9A992F98247276500066A8E6 /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		9A992F9A247279630066A8E6 /* Doodles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Doodles.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +104,12 @@
 		9A992F652472759D0066A8E6 /* Doodles */ = {
 			isa = PBXGroup;
 			children = (
+				9A992F9A247279630066A8E6 /* Doodles.entitlements */,
 				9A992F662472759D0066A8E6 /* AppDelegate.swift */,
 				9A992F682472759D0066A8E6 /* SceneDelegate.swift */,
-				9A992F6A2472759D0066A8E6 /* ContentView.swift */,
+				9A992F6A2472759D0066A8E6 /* IndexView.swift */,
+				9A992F96247275B50066A8E6 /* Clock.swift */,
+				9A992F98247276500066A8E6 /* LazyView.swift */,
 				9A992F6C2472759F0066A8E6 /* Assets.xcassets */,
 				9A992F712472759F0066A8E6 /* LaunchScreen.storyboard */,
 				9A992F742472759F0066A8E6 /* Info.plist */,
@@ -269,7 +277,9 @@
 			files = (
 				9A992F672472759D0066A8E6 /* AppDelegate.swift in Sources */,
 				9A992F692472759D0066A8E6 /* SceneDelegate.swift in Sources */,
-				9A992F6B2472759D0066A8E6 /* ContentView.swift in Sources */,
+				9A992F97247275B50066A8E6 /* Clock.swift in Sources */,
+				9A992F99247276500066A8E6 /* LazyView.swift in Sources */,
+				9A992F6B2472759D0066A8E6 /* IndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Doodles/Doodles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Doodles/Preview Content\"";
 				DEVELOPMENT_TEAM = LAA69LK8PF;
@@ -445,6 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iphonso.Doodles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Doodles/Doodles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Doodles/Preview Content\"";
 				DEVELOPMENT_TEAM = LAA69LK8PF;
@@ -465,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iphonso.Doodles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
