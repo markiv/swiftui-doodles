@@ -27,21 +27,25 @@ struct Clock: View {
 
     var body: some View {
         ZStack(alignment: .center) {
-            Circle().frame(width: 8)
-            Needle()
-                .frame(width: 5, height: 60)
-                .offset(y: -30)
-                .rotationEffect(.degrees(Double(hour * 30)))
-            Needle()
-                .frame(width: 5, height: 100)
-                .offset(y: -50)
-                .rotationEffect(.degrees(Double(minute * 6)))
-            Needle()
-                .foregroundColor(.red)
-                .frame(width: 1, height: 100)
-                .offset(y: -50)
-                .rotationEffect(.degrees(Double(second * 6)))
-            Circle().frame(width: 5).foregroundColor(.red)
+            Circle().stroke(Color.secondary).frame(width: 200)
+            Group {
+                Circle().frame(width: 8)
+                Needle()
+                    .frame(width: 5, height: 60)
+                    .offset(y: -30)
+                    .rotationEffect(.degrees(Double(hour * 30)))
+                Needle()
+                    .frame(width: 5, height: 100)
+                    .offset(y: -50)
+                    .rotationEffect(.degrees(Double(minute * 6)))
+                Needle()
+                    .foregroundColor(.red)
+                    .frame(width: 1, height: 100)
+                    .offset(y: -50)
+                    .rotationEffect(.degrees(Double(second * 6)))
+                Circle().frame(width: 5).foregroundColor(.red)
+            }
+            .shadow(radius: 1, y: 3)
         }
         .onReceive(timer) { _ in
             let components = Calendar.autoupdatingCurrent
@@ -51,15 +55,14 @@ struct Clock: View {
             self.second = components.second!
         }
 //        .frame(width: 200, height: 200)
-        .shadow(radius: 1, y: 3)
         .animation(.spring(response: 0.2, dampingFraction: 0.3))
     }
 }
 
 #if DEBUG
-struct Clock_Previews: PreviewProvider {
-    static var previews: some View {
-        Clock()
+    struct Clock_Previews: PreviewProvider {
+        static var previews: some View {
+            Clock()
+        }
     }
-}
 #endif
