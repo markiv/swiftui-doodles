@@ -12,7 +12,8 @@ struct IndexView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("Clock 1", destination: LazyView(Clock()))
+                NavigationLink("Clock #1", destination: LazyView(Clock()))
+                NavigationLink("Clock #2", destination: LazyView(Clock2()))
             }.navigationBarTitle("Doodles")
         }
     }

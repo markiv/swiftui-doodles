@@ -17,6 +17,7 @@
 		9A992F89247275A00066A8E6 /* DoodlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F88247275A00066A8E6 /* DoodlesUITests.swift */; };
 		9A992F97247275B50066A8E6 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F96247275B50066A8E6 /* Clock.swift */; };
 		9A992F99247276500066A8E6 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F98247276500066A8E6 /* LazyView.swift */; };
+		9A992F9C2472B4AD0066A8E6 /* Clock2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F9B2472B4AD0066A8E6 /* Clock2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		9A992F96247275B50066A8E6 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		9A992F98247276500066A8E6 /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		9A992F9A247279630066A8E6 /* Doodles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Doodles.entitlements; sourceTree = "<group>"; };
+		9A992F9B2472B4AD0066A8E6 /* Clock2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9A992F682472759D0066A8E6 /* SceneDelegate.swift */,
 				9A992F6A2472759D0066A8E6 /* IndexView.swift */,
 				9A992F96247275B50066A8E6 /* Clock.swift */,
+				9A992F9B2472B4AD0066A8E6 /* Clock2.swift */,
 				9A992F98247276500066A8E6 /* LazyView.swift */,
 				9A992F6C2472759F0066A8E6 /* Assets.xcassets */,
 				9A992F712472759F0066A8E6 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A992F672472759D0066A8E6 /* AppDelegate.swift in Sources */,
+				9A992F9C2472B4AD0066A8E6 /* Clock2.swift in Sources */,
 				9A992F692472759D0066A8E6 /* SceneDelegate.swift in Sources */,
 				9A992F97247275B50066A8E6 /* Clock.swift in Sources */,
 				9A992F99247276500066A8E6 /* LazyView.swift in Sources */,
