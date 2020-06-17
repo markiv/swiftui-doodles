@@ -8,14 +8,23 @@
 
 import SwiftUI
 
-struct PreviewWithState: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+#if DEBUG
+/// Allows us to conveniently pass some state to previews.
+///
+///     PreviewWithState(value: "Vikram") {
+///         TextField(title: "First Name", text: $0)
+///     }
+public struct PreviewWithState<Value, Content: View>: View {
+    @State var value: Value
+    var content: (Binding<Value>) -> Content
 
-struct PreviewWithState_Previews: PreviewProvider {
-    static var previews: some View {
-        PreviewWithState()
+    public var body: some View {
+        content($value)
+    }
+
+    public init(value: Value, @ViewBuilder content: @escaping (Binding<Value>) -> Content) {
+        self._value = State(wrappedValue: value)
+        self.content = content
     }
 }
+#endif

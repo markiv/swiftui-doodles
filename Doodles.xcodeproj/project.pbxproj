@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1218A0247437E800A117AC /* Jiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A12189F247437E800A117AC /* Jiggle.swift */; };
+		9A14DDAF247ECA4D008EE14A /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F8EB0247C2EDA009503BA /* FloatingTextField.swift */; };
+		9A3F8EB3247C3493009503BA /* PreviewWithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F8EB2247C3493009503BA /* PreviewWithState.swift */; };
 		9A992F672472759D0066A8E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F662472759D0066A8E6 /* AppDelegate.swift */; };
 		9A992F692472759D0066A8E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F682472759D0066A8E6 /* SceneDelegate.swift */; };
 		9A992F6B2472759D0066A8E6 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F6A2472759D0066A8E6 /* IndexView.swift */; };
@@ -18,6 +21,8 @@
 		9A992F97247275B50066A8E6 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F96247275B50066A8E6 /* Clock.swift */; };
 		9A992F99247276500066A8E6 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F98247276500066A8E6 /* LazyView.swift */; };
 		9A992F9C2472B4AD0066A8E6 /* Clock2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992F9B2472B4AD0066A8E6 /* Clock2.swift */; };
+		9AC2072F2480129300EE083A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2072E2480129300EE083A /* ContainerView.swift */; };
+		9AC20731248012B600EE083A /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC20730248012B600EE083A /* Pager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A12189F247437E800A117AC /* Jiggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggle.swift; sourceTree = "<group>"; };
+		9A3F8EB0247C2EDA009503BA /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		9A3F8EB2247C3493009503BA /* PreviewWithState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewWithState.swift; sourceTree = "<group>"; };
 		9A992F632472759D0066A8E6 /* Doodles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doodles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A992F662472759D0066A8E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A992F682472759D0066A8E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,8 @@
 		9A992F98247276500066A8E6 /* LazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		9A992F9A247279630066A8E6 /* Doodles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Doodles.entitlements; sourceTree = "<group>"; };
 		9A992F9B2472B4AD0066A8E6 /* Clock2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock2.swift; sourceTree = "<group>"; };
+		9AC2072E2480129300EE083A /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		9AC20730248012B600EE083A /* Pager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +122,12 @@
 				9A992F6A2472759D0066A8E6 /* IndexView.swift */,
 				9A992F96247275B50066A8E6 /* Clock.swift */,
 				9A992F9B2472B4AD0066A8E6 /* Clock2.swift */,
+				9A12189F247437E800A117AC /* Jiggle.swift */,
+				9A3F8EB0247C2EDA009503BA /* FloatingTextField.swift */,
 				9A992F98247276500066A8E6 /* LazyView.swift */,
+				9A3F8EB2247C3493009503BA /* PreviewWithState.swift */,
+				9AC2072E2480129300EE083A /* ContainerView.swift */,
+				9AC20730248012B600EE083A /* Pager.swift */,
 				9A992F6C2472759F0066A8E6 /* Assets.xcassets */,
 				9A992F712472759F0066A8E6 /* LaunchScreen.storyboard */,
 				9A992F742472759F0066A8E6 /* Info.plist */,
@@ -278,12 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC2072F2480129300EE083A /* ContainerView.swift in Sources */,
 				9A992F672472759D0066A8E6 /* AppDelegate.swift in Sources */,
 				9A992F9C2472B4AD0066A8E6 /* Clock2.swift in Sources */,
 				9A992F692472759D0066A8E6 /* SceneDelegate.swift in Sources */,
+				9A1218A0247437E800A117AC /* Jiggle.swift in Sources */,
+				9A14DDAF247ECA4D008EE14A /* FloatingTextField.swift in Sources */,
 				9A992F97247275B50066A8E6 /* Clock.swift in Sources */,
 				9A992F99247276500066A8E6 /* LazyView.swift in Sources */,
 				9A992F6B2472759D0066A8E6 /* IndexView.swift in Sources */,
+				9A3F8EB3247C3493009503BA /* PreviewWithState.swift in Sources */,
+				9AC20731248012B600EE083A /* Pager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,8 @@ struct IndexView: View {
             List {
                 NavigationLink("Clock #1", destination: LazyView(Clock()))
                 NavigationLink("Clock #2", destination: LazyView(Clock2()))
+                NavigationLink("Jiggle View Modifier", destination: LazyView(JiggleSample()))
+                NavigationLink("Floating Text Field", destination: LazyView(FloatingTextFieldDemo()))
             }.navigationBarTitle("Doodles")
         }
     }

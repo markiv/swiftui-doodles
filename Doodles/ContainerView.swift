@@ -55,8 +55,8 @@ extension ContainerView {
     /// Creates a container with a single child view in it.
     public init<A: View>(@ViewBuilder content: () -> A) {
         self.init()
-        let views = content()
-        self.items = [AnyView(views)]
+        let view = content()
+        self.items = [AnyView(view)]
     }
 
     /// Creates a container with two child views in it.
