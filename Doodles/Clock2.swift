@@ -10,8 +10,10 @@ import SwiftUI
 
 struct Clock2: View {
     @State private var hour = 10.0
-    @State private var minute = -51
+    @State private var minute = 9
     @State private var second = 30
+    @State private var isFirstTime = true
+
     let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
 
     var body: some View {
@@ -62,7 +64,6 @@ struct Clock2: View {
     }
 
     func updateTime() {
-        let isFirstTime = minute < 0
         let components = Calendar.autoupdatingCurrent
             .dateComponents([.hour, .minute, .second], from: Date())
         let minute = components.minute! + 60 * components.hour!
@@ -81,6 +82,7 @@ struct Clock2: View {
                 self.minute = minute
             }
         }
+        isFirstTime = false
     }
 }
 

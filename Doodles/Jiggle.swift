@@ -18,16 +18,15 @@ struct Jiggle: ViewModifier {
             .animation(Animation.spring().speed(5).repeatForever().delay(.random(in: 0...0.5)))
             .onAppear {
                 self.hasAppeared = true
-        }
+            }
     }
 }
 
 extension View {
     func jiggle() -> some View {
-        self.modifier(Jiggle())
+        modifier(Jiggle())
     }
 }
-
 
 struct Icon: View {
     @EnvironmentObject var viewModel: JiggleSample.ViewModel
@@ -59,6 +58,7 @@ struct JiggleSample: View {
     class ViewModel: ObservableObject {
         @Published var isShowingAlert = false
     }
+
     @ObservedObject var viewModel = ViewModel()
 
     func row(label: String? = nil) -> some View {
